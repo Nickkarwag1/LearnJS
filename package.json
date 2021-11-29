@@ -1,0 +1,34 @@
+{
+
+  "name": "testproject",
+
+  "version": "1.0.0",
+
+  "main": "app.js",
+
+  "scripts": {
+
+    "test": "mocha"
+
+  },
+
+  "author": "Kolya Karnatski",
+
+  "license": "ISC",
+
+  "description": "",
+
+  "dependencies": {
+
+    "mocha": "9.1.3"
+
+  },
+
+  "devDependencies": {
+
+    "prettier": "2.4.1"
+
+  }
+
+}
+
