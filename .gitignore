@@ -118,6 +118,5 @@ dist
 .pnp.*
 
 .idea/
-app.js
 package-lock.json
 package.json
