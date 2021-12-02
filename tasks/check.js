@@ -1,18 +1,18 @@
-const {fromSecondsToMinutes,fromSecondsToHours, fromHoursToMinutes, fromHoursToSeconds, RandomNumber} = require('./timeConverter')
-
+const {fromSecondsToMinutes,fromSecondsToHours, fromHoursToMinutes, fromHoursToSeconds,} = require('./timeConverter')
+const randomNumber = require('./getRandomNum')
 
 
     describe("timeConverter", function () {
         it("Перевод секунд в минуты", function () {
-            console.log(fromSecondsToMinutes(RandomNumber))
+            console.log(fromSecondsToMinutes(randomNumber))
         });
         it("Перевод секунд в часы", function () {
-            console.log(fromSecondsToHours(RandomNumber))
+            console.log(fromSecondsToHours(randomNumber))
         });
         it("Перевод часы в минуты", function () {
-            console.log(fromHoursToMinutes(RandomNumber))
+            console.log(fromHoursToMinutes(randomNumber))
         });
         it("Перевод часы в секунды", function () {
-            console.log(fromHoursToSeconds(RandomNumber))
+            console.log(fromHoursToSeconds(randomNumber))
         });
     });
