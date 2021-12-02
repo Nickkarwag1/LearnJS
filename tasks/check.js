@@ -2,6 +2,7 @@ const {fromSecondsToMinutes,fromSecondsToHours, fromHoursToMinutes, fromHoursToS
 const getRandomNum = require('./getRandomNum')
 
 const MIN_NUM = 0;
+
 const MAX_NUM = 100;
 
     describe("timeConverter", function () {
