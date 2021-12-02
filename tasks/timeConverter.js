@@ -1,25 +1,27 @@
+const isNum = require('./isNumber')
+
 const COUNT = 60;
 
 function fromSecondsToMinutes(seconds){
-    if(typeof seconds === 'number'){
+    if(isNum){
         return seconds / COUNT;
     }
 }
 
 function fromSecondsToHours(seconds){
-    if(typeof seconds === 'number'){
+    if(isNum){
         return seconds / (COUNT*COUNT);
     }
 }
 
 function fromHoursToMinutes(hours){
-    if(typeof hours === 'number'){
+    if(isNum){
         return hours * COUNT;
     }
 }
 
 function fromHoursToSeconds(hours){
-    if(typeof hours === 'number'){
+    if(isNum){
         return hours * (COUNT*COUNT);
     }
 }
