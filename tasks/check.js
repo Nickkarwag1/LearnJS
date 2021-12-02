@@ -5,22 +5,25 @@ const MIN_NUM = 0;
 const MAX_NUM = 100;
 
     describe("timeConverter", function () {
-        it("Перевод секунд в минуты", function () {
+        it("conversion of seconds to minutes", function () {
             const secondsCount = getRandomNum(MIN_NUM, MAX_NUM);
             const minutes = fromSecondsToMinutes(secondsCount);
             console.log(minutes);
         });
-        it("Перевод секунд в часы", function () {
+
+        it("conversion of seconds to hours", function () {
             const secondsCount = getRandomNum(MIN_NUM, MAX_NUM);
             const hours = fromSecondsToHours(secondsCount);
             console.log(hours);
         });
-        it("Перевод часы в минуты", function () {
+
+        it("conversion of hours to minutes", function () {
             const hoursCount = getRandomNum(MIN_NUM, MAX_NUM);
             const minutes = fromHoursToMinutes(hoursCount);
             console.log(minutes);
         });
-        it("Перевод часы в секунды", function () {
+
+        it("conversion of hours to seconds", function () {
             const hoursCount = getRandomNum(MIN_NUM, MAX_NUM);
             const seconds = fromHoursToSeconds(hoursCount);
             console.log(seconds);
