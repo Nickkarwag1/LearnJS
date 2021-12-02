@@ -1,18 +1,28 @@
 const {fromSecondsToMinutes,fromSecondsToHours, fromHoursToMinutes, fromHoursToSeconds,} = require('./timeConverter')
-const randomNumber = require('./getRandomNum')
+const getRandomNum = require('./getRandomNum')
 
+const MIN_NUM = 0;
+const MAX_NUM = 100;
 
     describe("timeConverter", function () {
         it("Перевод секунд в минуты", function () {
-            console.log(fromSecondsToMinutes(randomNumber))
+            const secondsCount = getRandomNum(MIN_NUM, MAX_NUM);
+            const minutes = fromSecondsToMinutes(secondsCount);
+            console.log(minutes);
         });
         it("Перевод секунд в часы", function () {
-            console.log(fromSecondsToHours(randomNumber))
+            const secondsCount = getRandomNum(MIN_NUM, MAX_NUM);
+            const hours = fromSecondsToHours(secondsCount);
+            console.log(hours);
         });
         it("Перевод часы в минуты", function () {
-            console.log(fromHoursToMinutes(randomNumber))
+            const hoursCount = getRandomNum(MIN_NUM, MAX_NUM);
+            const minutes = fromHoursToMinutes(hoursCount);
+            console.log(minutes);
         });
         it("Перевод часы в секунды", function () {
-            console.log(fromHoursToSeconds(randomNumber))
+            const hoursCount = getRandomNum(MIN_NUM, MAX_NUM);
+            const seconds = fromHoursToSeconds(hoursCount);
+            console.log(seconds);
         });
     });
