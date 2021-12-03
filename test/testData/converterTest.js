@@ -1,15 +1,14 @@
-const {fromSecondsToMinutes,fromSecondsToHours, fromHoursToMinutes, fromHoursToSeconds,} = require('./timeConverter')
+const {fromSecondsToMinutes,fromSecondsToHours, fromHoursToMinutes, fromHoursToSeconds,} = require('../../tasks/converter/timeConverter')
 const expect = require('expect.js');
-
-const MIN_NUM = 0;
-
-const MAX_NUM = 100;
+const secondsToMinutesTestData = require('./secondsToMinutesTestData')
 
     describe("timeConverter", function () {
-        it("conversion of seconds to minutes", function () {
-            const expectedMinutes = 1;
-            const minutes = fromSecondsToMinutes(60);
-            expect(minutes).to.eql(expectedMinutes)
+        secondsToMinutesTestData.forEach(({seconds, expectedMinutes}) => {
+            it("conversion of seconds to minutes", function () {
+                const expectedMinutes = 1;
+                const minutes = fromSecondsToMinutes(60);
+                expect(minutes).to.eql(expectedMinutes)
+            });
         });
 
         it("conversion of seconds to hours", function () {
