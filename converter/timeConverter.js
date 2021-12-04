@@ -1,27 +1,27 @@
-const isNum = require('./isNumber')
+const isNumber = require('../utils/isNumber')
 
 const COUNT = 60;
 
 function fromSecondsToMinutes(seconds){
-    if(isNum){
+    if(isNumber(seconds) && !isNaN(seconds)){
         return seconds / COUNT;
     }
 }
 
 function fromSecondsToHours(seconds){
-    if(isNum){
+    if(isNumber(seconds)){
         return seconds / (COUNT*COUNT);
     }
 }
 
 function fromHoursToMinutes(hours){
-    if(isNum){
+    if(isNumber(hours)){
         return hours * COUNT;
     }
 }
 
 function fromHoursToSeconds(hours){
-    if(isNum){
+    if(isNumber(hours)){
         return hours * (COUNT*COUNT);
     }
 }
